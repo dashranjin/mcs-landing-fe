@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  color: #070b60;
+  font-family: "Rubik";
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #143d8c;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 400;
+  src: local("Rubik"), url(./fonts/Rubik-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Rubik";
+  font-weight: 600;
+  src: local("Rubik"), url(./fonts/Rubik-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Rubik";
+  font-weight: 300;
+  src: local("Rubik"), url(./fonts/Rubik-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"), url(./fonts/Rubik-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: medium;
 }
